@@ -55,7 +55,7 @@ import { Component, Inject} from '@angular/core';
     AppComponent,
     CatalogComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
     DialogOverviewExampleDialog
   ],
   imports: [
