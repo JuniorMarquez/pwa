@@ -15,6 +15,9 @@ import { environment } from '../environments/environment';
 //COMPONENTS
 
 import { CatalogComponent,DialogOverviewExampleDialog } from './components/catalog/catalog.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 //SERVICES
 //import {InformacionService} from './services/informacion.service';
@@ -51,6 +54,8 @@ import { Component, Inject} from '@angular/core';
   declarations: [
     AppComponent,
     CatalogComponent,
+    HeaderComponent,
+    FooterComponent
     DialogOverviewExampleDialog
   ],
   imports: [
