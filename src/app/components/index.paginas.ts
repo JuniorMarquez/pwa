@@ -1,2 +1,2 @@
-export {CatalogComponent } from "./catalog/catalog.component";
+export {SliderHomeComponent } from "./slider-home/slider-home.component";
 

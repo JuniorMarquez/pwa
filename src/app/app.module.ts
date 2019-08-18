@@ -47,6 +47,9 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 //import { LightboxModule } from 'ngx-lightbox';
 import { Component, Inject} from '@angular/core';
+import { TopTixsComponent } from './components/top-tixs/top-tixs.component';
+import { SliderHomeComponent } from './components/slider-home/slider-home.component';
+import { PreFooterComponent } from './components/pre-footer/pre-footer.component';
 
 
 
@@ -57,7 +60,10 @@ import { Component, Inject} from '@angular/core';
     CatalogComponent,
     HeaderComponent,
     FooterComponent,
-    DialogOverviewExampleDialog
+    DialogOverviewExampleDialog,
+    TopTixsComponent,
+    SliderHomeComponent,
+    PreFooterComponent
   ],
   imports: [
     BrowserModule,
