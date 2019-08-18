@@ -1,59 +1,59 @@
 p a {
-    color: #ff4e00;
+    color: #0400ff;
 }
 .theme-cl {
-    color:#ff4e00 !important;
+    color:#0400ff !important;
 }
 .theme-bg {
-    background:#ff4e00;
+    background:#0400ff;
 }
 .theme-btn {
-    background:#ff4e00;
-    border: 1px solid #ff4e00;
+    background:#0400ff;
+    border: 1px solid #0400ff;
 }
 nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn {
-    background: #ff4e00 !important;
+    background: #0400ff !important;
 }
 .half-bg:before {
-    background: #ff4e00;
+    background: #0400ff;
 }
 .footer .f-social-box ul li a i:hover, .footer .f-social-box ul li a i:focus {
-    background: #ff4e00;
-    border-color: #ff4e00;
+    background: #0400ff;
+    border-color: #0400ff;
 }
 .daterangepicker td.active, .daterangepicker td.active:hover {
-    background-color: #ff4e00;
+    background-color: #0400ff;
 }
 .custom-checkbox input[type="checkbox"]:checked + label:before {
-    border-color: #ff4e00;
-    background: #ff4e00;
+    border-color: #0400ff;
+    background: #0400ff;
 }
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
-    background-color: #ff4e00;
-    border-color: #ff4e00;
+    background-color: #0400ff;
+    border-color: #0400ff;
 }
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
-    background-color: #ff4e00;
-    border-color: #ff4e00;
+    background-color: #0400ff;
+    border-color: #0400ff;
 }
 .profile-header-nav .nav-tabs li.active a, .profile-header-nav .nav-tabs li.active a:focus, .profile-header-nav .nav-tabs li.active a:hover {
-    color: #ff4e00;
+    color: #0400ff;
 }
 .profile-header-nav .nav-tabs li a:hover {
-    color: #ff4e00;
+    color: #0400ff;
 }
 .active a.btn.btn-pricing {
-    background: #ff4e00;
-    border-color:#ff4e00;
+    background: #0400ff;
+    border-color:#0400ff;
 }
 .simple-tab-style .nav-tabs > li.active > a, .simple-tab-style .nav-tabs > li.active > a:hover, .simple-tab-style .nav-tabs > li.active > a:focus {
-    background:#ff4e00;
-    border: 1px solid #ff4e00;
+    background:#0400ff;
+    border: 1px solid #0400ff;
 }
 #dashboard-menu li.active>a {
-    color: #ff4e00;
+    color: #0400ff;
 }
 #dashboard-menu li>a:hover, #dashboard-menu li>a:focus {
     background: #ffffff;
-    color: #ff4e00;
+    color: #0400ff;
 }

@@ -5,6 +5,7 @@ import { TixsService } from "../../services/tixs.service";
 import { ProductInfoService } from "../../services/product-info.service";
 import { CarService } from "../../services/car.service";
 
+declare var $: any;
 
 export interface DialogData {
   quan:number;
@@ -90,7 +91,7 @@ export class CatalogComponent {
    	ngOnInit(): void {
    		//this.filter();
   		//$.getScript('assets/js/collage.js');
- 		//$.getScript('assets/js/scripts.js');
+ 		$.getScript('assets/js/custom.js');
 		this._ps.imagesG=[];
 		this.product=[]	;	
   	}
