@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Inject } from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-slider-home',
@@ -9,7 +11,12 @@ export class SliderHomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit(): void {
+   		//this.filter();
+  		//$.getScript('assets/js/collage.js');
+ 	//	$.getScript('assets/js/custom.js');
+		//this._ps.imagesG=[];
+		//this.product=[]	;	
+  	}
 
 }
