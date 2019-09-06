@@ -21,7 +21,9 @@ body,html {
     margin: 0;
     padding: 0
 }
-
+.errorLabel{
+    color: red;
+}
 body {
     background: #fff;
     font-weight: 400;
@@ -4152,14 +4154,14 @@ figure .read_more span {
     box-shadow: 0 0 20px 0 rgba(62,28,131,.1);
     font-size: 16px;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 14px;
     overflow: hidden;
     margin-bottom: 30px
 }
 
 .destination-box,.hotel-box,.restaurent-box {
     -webkit-box-shadow: 0 0 20px 0 rgba(62,28,131,.1);
-    border-radius: 4px;
+    border-radius: 14px;
     overflow: hidden
 }
 
@@ -4478,7 +4480,7 @@ span.featured-tour {
     position: relative;
     width: 100%;
     padding: 14px 20px;
-    border-bottom: 1px solid #f4f4f4
+    border-bottom: 0px solid #f4f4f4
 }
 
 .destination-place,.discount-flick,.featured {
@@ -4519,7 +4521,8 @@ span.featured-tour {
 .destination-place {
     bottom: 20px;
     left: 20px;
-    font-size: 16px
+    font-size: 16px;
+    right: 20px
 }
 
 .destination-place a:focus,.destination-place a:hover,.destination-place>* {
@@ -5381,7 +5384,7 @@ ul.amenities.fourth li {
 
 .list-thumb-box {
     position: relative;
-    min-height: 250px;
+    /*min-height: 250px;*/
     border-radius: 6px;
     overflow: hidden
 }
@@ -5853,7 +5856,7 @@ span.guider-status {
 }
 
 .log-screen {
-    background-size: cover;
+    background-size: 400px;
     background-position: center
 }
 
@@ -6849,6 +6852,13 @@ label.btn-bs-file.btn {
 #msform,#progressbar li {
     position: relative
 }
+#formPartner,#progressbar li {
+    position: relative
+}
+#formAffiliate,#progressbar li {
+    position: relative
+}
+
 
 .message-avatar img {
     width: 54px;
@@ -6910,11 +6920,18 @@ label.btn-bs-file.btn {
     border: 0;
     box-sizing: border-box
 }
+#formAffiliate fieldset {
+    border: 0;
+    box-sizing: border-box
+}
+#formPartner fieldset {
+    border: 0;
+    box-sizing: border-box
+}
 
 #msform fieldset:not(:first-of-type) {
     display: none
 }
-
 #msform .action-button {
     width: 100px;
     background: #27AE60;
@@ -6926,8 +6943,42 @@ label.btn-bs-file.btn {
     padding: 10px 5px;
     margin: 10px 5px
 }
-
 #msform .action-button:focus,#msform .action-button:hover {
+    box-shadow: 0 0 0 2px #fff,0 0 0 3px #27AE60
+}
+#msAffiliate fieldset:not(:first-of-type) {
+    display: none
+}
+#msAffiliate .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: 700;
+    color: #fff;
+    border: 0;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+#msAffiliate .action-button:focus,#msAffiliate .action-button:hover {
+    box-shadow: 0 0 0 2px #fff,0 0 0 3px #27AE60
+}
+#msPartner fieldset:not(:first-of-type) {
+    display: none
+}
+#msPartner .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: 700;
+    color: #fff;
+    border: 0;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msPartner.action-button:focus,#msmPartner .action-button:hover {
     box-shadow: 0 0 0 2px #fff,0 0 0 3px #27AE60
 }
 

@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-//import { NgModule } from '@angular/core';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { ArchwizardModule } from 'angular-archwizard';
+
 
 
 //RUTAS
@@ -12,9 +15,10 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+//DIRECTIVAS
+import { ConfirmEqualValidatorDirective } from './confirm-equal-validator.directive';
 
 //COMPONENTS
-
 import { CatalogComponent,DialogOverviewExampleDialog } from './components/catalog/catalog.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -25,6 +29,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import {TixsService} from './services/tixs.service';
 import {ProductInfoService} from './services/product-info.service';
 import {CarService} from './services/car.service';
+import {DataApiService} from './services/data-api.service';
+import {ScrollTopService} from './services/scroll-top.service';
+import {UserWService} from './services/user-w.service';
+
 
 
 //ANIMATIONS
@@ -45,11 +53,27 @@ import {MatTableModule} from '@angular/material/table';
 
 
 import { HttpClientModule } from '@angular/common/http';
-//import { LightboxModule } from 'ngx-lightbox';
 import { Component, Inject} from '@angular/core';
 import { TopTixsComponent } from './components/top-tixs/top-tixs.component';
 import { SliderHomeComponent } from './components/slider-home/slider-home.component';
 import { PreFooterComponent } from './components/pre-footer/pre-footer.component';
+import { MyTixsComponent } from './components/my-tixs/my-tixs.component';
+import { LoginComponent } from './components/login/login.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { SideleftComponent } from './components/sideleft/sideleft.component';
+import { AffiliatesComponent } from './components/affiliates/affiliates.component';
+import { PartnerDetailComponent } from './components/partner-detail/partner-detail.component';
+import { AffiliateDetailComponent } from './components/affiliate-detail/affiliate-detail.component';
+import { TixDetailComponent } from './components/tix-detail/tix-detail.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AddTixComponent } from './components/tixs/add-tix/add-tix.component';
+import { ComingComponent } from './components/coming/coming.component';
+import { AlltixsComponent } from './components/alltixs/alltixs.component';
+import { NewMemberComponent } from './components/new-member/new-member.component';
+import { PartnerComponent } from './components/new-member/partner/partner.component';
+import { AffiliateComponent } from './components/new-member/affiliate/affiliate.component';
+
 
 
 
@@ -63,7 +87,24 @@ import { PreFooterComponent } from './components/pre-footer/pre-footer.component
     DialogOverviewExampleDialog,
     TopTixsComponent,
     SliderHomeComponent,
-    PreFooterComponent
+    PreFooterComponent,
+    MyTixsComponent,
+    LoginComponent,
+    PartnersComponent,
+    SideleftComponent,
+    AffiliatesComponent,
+    PartnerDetailComponent,
+    AffiliateDetailComponent,
+    TixDetailComponent,
+    SignupComponent,
+    ProfileComponent,
+    ConfirmEqualValidatorDirective,
+    AddTixComponent,
+    ComingComponent,
+    AlltixsComponent,
+    NewMemberComponent,
+    PartnerComponent,
+    AffiliateComponent
   ],
   imports: [
     BrowserModule,
@@ -78,7 +119,10 @@ import { PreFooterComponent } from './components/pre-footer/pre-footer.component
     MatNativeDateModule,MatStepperModule,
     ReactiveFormsModule,
     MatBadgeModule,
-    MatTableModule
+    MatTableModule,
+    CarouselModule,
+    NgxSpinnerModule,
+    ArchwizardModule
   ],
   exports: [
     MatButtonModule, MatCheckboxModule, MatTabsModule,MatDialogModule,MatIconModule,MatInputModule,
@@ -91,7 +135,10 @@ import { PreFooterComponent } from './components/pre-footer/pre-footer.component
   ],
  entryComponents:[ DialogOverviewExampleDialog ],
   providers: [
-    TixsService
+    TixsService,
+    DataApiService,
+    ScrollTopService,
+    UserWService
       ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
